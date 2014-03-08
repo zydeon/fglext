@@ -48,3 +48,9 @@ library {
     build-depends:    base < 5, mtl, containers, array
     extensions: MultiParamTypeClasses, OverlappingInstances, FlexibleInstances, ScopedTypeVariables
 }
+
+Test-Suite test-fgl
+    type:            exitcode-stdio-1.0
+    hs-source-dirs:  test
+    main-is:         Test.hs
+    build-depends:   base, QuickCheck
